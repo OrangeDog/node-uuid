@@ -242,7 +242,7 @@
       case 'sha1': v = 0x50; break;
     }
 
-    output.write(hash.digest(), offset, 16, 'binary');
+    output.write(hash.digest('binary'), offset, 16, 'binary');
     output[offset + 8] = output[offset + 8] & 0x3f | 0xa0; // set variant
     output[offset + 6] = output[offset + 6] & 0x0f | v; // set version
 
