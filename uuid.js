@@ -243,7 +243,7 @@
     }
 
     output.write(hash.digest('binary'), offset, 16, 'binary');
-    output[offset + 8] = output[offset + 8] & 0x3f | 0xa0; // set variant
+    output[offset + 8] = output[offset + 8] & 0x3f | 0x80; // set variant
     output[offset + 6] = output[offset + 6] & 0x0f | v; // set version
 
     return buffer || unparse(output);
