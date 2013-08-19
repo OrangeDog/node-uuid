@@ -35,13 +35,13 @@ Then create some ids ...
 uuid.v1(); // -> '6c84fb90-12c4-11e1-840d-7b25c5ee775a'
 
 // Generate a v3 (md5) id
-uuid.v3({ns: uuid.ns.DNS, data: 'nodejs.org'}); // -> '5c8024b3-5a3d-31e4-b965-b3fc0e5bc8bf'
+uuid.v3({ns: uuid.ns.DNS, data: 'nodejs.org'}); // -> '5c8024b3-5a3d-31e4-9965-b3fc0e5bc8bf'
 
 // Generate a v4 (random) id
 uuid.v4(); // -> '110ec58a-a0f2-4ac4-8393-c866d813b8d1'
 
 // Generate a v5 (sha1) id
-uuid.v5({ns: uuid.ns.DNS, data: 'nodejs.org'}); // -> 'd34bc706-e2c6-5e9b-ac25-3bfae9d985fd'
+uuid.v5({ns: uuid.ns.DNS, data: 'nodejs.org'}); // -> 'd34bc706-e2c6-5e9b-8c25-3bfae9d985fd'
 
 ```
 
